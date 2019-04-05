@@ -5,11 +5,40 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+    //   background: `rebeccapurple`,
+      marginBottom: `4rem`,
     }}
   >
-    <div
+
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+            
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+                    <a class="navbar-item">
+                        Link Demo
+                    </a>
+                    <a class="navbar-item">
+                        Link Demo 2
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    {/* <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
@@ -27,7 +56,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
+    </div> */}
   </header>
 )
 
